@@ -1,0 +1,43 @@
+
+PLAY [Configure OPS445 VM] *****************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [vmlab]
+
+TASK [Update Apache] ***********************************************************
+ok: [vmlab]
+
+TASK [Install EPEL] ************************************************************
+ok: [vmlab]
+
+TASK [Remove tree] *************************************************************
+changed: [vmlab]
+
+TASK [Set hostname] ************************************************************
+ok: [vmlab]
+
+TASK [Create user] *************************************************************
+ok: [vmlab]
+
+TASK [Create .ssh directory] ***************************************************
+ok: [vmlab]
+
+TASK [Copy SSH public key] *****************************************************
+ok: [vmlab]
+
+TASK [Create ops445 directory] *************************************************
+ok: [vmlab]
+
+TASK [Create lab directories] **************************************************
+ok: [vmlab] => (item=lab1)
+ok: [vmlab] => (item=lab2)
+ok: [vmlab] => (item=lab3)
+ok: [vmlab] => (item=lab4)
+ok: [vmlab] => (item=lab5)
+ok: [vmlab] => (item=lab6)
+ok: [vmlab] => (item=lab7)
+ok: [vmlab] => (item=lab8)
+
+PLAY RECAP *********************************************************************
+vmlab                      : ok=10   changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
